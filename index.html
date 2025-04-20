@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>SpotiSave</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>SpotiSave</h1>
+
+  <div id="pagina">
+    <div class="input-container">
+      <input type="text" id="client-id" placeholder="Introduce tu Client ID" />
+    </div>
+
+    <button id="login-button">Iniciar sesión en Spotify</button>
+    <button id="export-button" disabled>Exportar listas</button>
+    <pre id="status" class="status-bg"></pre>
+
+    <pre id="status-message" class="status-bg"></pre>
+  </div>
+
+  <script src="pkce.js"></script>
+  <script src="auth.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

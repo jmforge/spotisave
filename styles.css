@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Fuente general tipo Spotify */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+#pagina {
+    width: 600px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 24px;
+    color: #fff
+}
+
+/* Contenedor del cuadro de texto para client_id */
+.input-container {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #1db954;
+    border-radius: 8px;
+    background-color: #181818;
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.input-container input:focus {
+    outline: none;
+    border-color: #1ed760;
+}
+
+/* Botones Spotify */
+button {
+    width: 60%;
+    margin: 10px auto;
+    display: block;
+    background-color: #1db954;
+    color: #000;
+    border: none;
+    border-radius: 999px;
+    padding: 12px 32px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #1ed760;
+    transform: scale(1.02);
+}
+
+button:disabled {
+    background-color: #3a3a3a;
+    color: #888;
+    cursor: not-allowed;
+}
+
+/* Estado y mensaje */
+#status, #status-message {
+    display: none;
+}
+
+#status-message {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #ccc;
+}
+
+.status-bg {
+    white-space: pre-wrap;
+    width: 100%;
+    max-width: 600px;
+    font-size: 14px;
+    color: #ccc;
+    background-color: #181818;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.4);
+}
