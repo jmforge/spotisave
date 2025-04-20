@@ -1,6 +1,5 @@
-//const clientId = '5edd62d39b3c43c381bbac78e01b0bda';
-//const redirectUri = 'https://TU_USUARIO.github.io/TU_REPOSITORIO/';
-const redirectUri = 'http://127.0.0.1:5500/';
+const redirectUri = 'https://jmforge.github.io/spotisave/';
+//const redirectUri = 'http://127.0.0.1:5500/';
 const scopes = [
   'playlist-read-private',
   'playlist-read-collaborative'
